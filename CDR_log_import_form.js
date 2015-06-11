@@ -3,15 +3,14 @@
 
     Filename: CDR_log_import_form.js
     Project:  CDR Log Import Extension
-    (C) Copyright 2011, CarlBaccus.com LLC, All Rights Reserved.
+    (C) Copyright 2015, CarlBaccus.com LLC, All Rights Reserved.
 
     Summary:        Form for CDR Log Import extension
-    REVISION: Version 1.4.3
+    REVISION: Version 1.4.4
 	This revision allows a linking to another table that needs to be imported in the
 	project called DeviceName with destDeviceName,Owner structure. 
 	Then it matches Destination device owners name in ""Cleaned table that is output.
-	**** New Experimental ******
-	adding check boxes for calling and/or called table generation
+	Commented out experimental
 	
     Developer(s):   Carl Baccus
 
@@ -71,7 +70,7 @@ class CDRLogImportForm extends Form
 
 //************************Experimental Start******************************
 
-		var checkbox1 = new CheckBox("Calling");
+//		var checkbox1 = new CheckBox("Calling");
 
 //************************Experimental End********************************/		
  
@@ -88,15 +87,15 @@ class CDRLogImportForm extends Form
 		output_layout.addSpacer(8);
 
 //*********************************Experimental Start******************
-        var Label_explain_layout = new BoxLayout(Layout.Horizontal);
-		Label_explain_layout.add(new Label("Check 'Calling' to generate a table from the calling extension"), 0, Layout.Expand | Layout.Left | Layout.Right, 8);
+//      var Label_explain_layout = new BoxLayout(Layout.Horizontal);
+//		Label_explain_layout.add(new Label("Check 'Calling' to generate a table from the calling extension"), 0, Layout.Expand | Layout.Left | Layout.Right, 8);
 
-       // create search layout
-        var search_extension_layout = new BoxLayout(Layout.Horizontal);
-		search_extension_layout.add(new Label("Extension:"), 0, Layout.Center);
-        search_extension_layout.add(checkbox1, 0, Layout.Expand | Layout.Top | Layout.Bottom, 5);
-        search_extension_layout.add(m_search_textbox, 1, Layout.Right);
-        search_extension_layout.addSpacer(8);
+//     // create search layout
+//      var search_extension_layout = new BoxLayout(Layout.Horizontal);
+//		search_extension_layout.add(new Label("Extension:"), 0, Layout.Center);
+//      search_extension_layout.add(checkbox1, 0, Layout.Expand | Layout.Top | Layout.Bottom, 5);
+//      search_extension_layout.add(m_search_textbox, 1, Layout.Right);
+//      search_extension_layout.addSpacer(8);
 
 //*********************************Experimental End******************/
 		
@@ -105,8 +104,8 @@ class CDRLogImportForm extends Form
         search_extension_layout.add(new Label("Search Extension:"), 0, Layout.Center);
         search_extension_layout.addSpacer(5);
         search_extension_layout.add(m_search_textbox, 1, Layout.Center);   *///removed because s_exten_lay above
-        search_extension_layout.addSpacer(8);
-		search_extension_layout.addStretchSpacer();
+        //search_extension_layout.addSpacer(8);
+		//search_extension_layout.addStretchSpacer();
 		
         // create button layout
         var button_layout = new BoxLayout(Layout.Horizontal);
@@ -128,10 +127,10 @@ class CDRLogImportForm extends Form
         main_layout.addSpacer(8);
 		main_layout.add(new Line(Line.Horizontal), 0, Layout.Expand);
         main_layout.addSpacer(8);
-		main_layout.add(Label_explain_layout, 0, Layout.Expand | Layout.Left | Layout.Right, 8);
-        main_layout.addSpacer(8);
-		main_layout.add(search_extension_layout, 0, Layout.Expand | Layout.Left | Layout.Right, 8);
-        main_layout.addSpacer(8);
+		//main_layout.add(Label_explain_layout, 0, Layout.Expand | Layout.Left | Layout.Right, 8);
+       // main_layout.addSpacer(8);
+		//main_layout.add(search_extension_layout, 0, Layout.Expand | Layout.Left | Layout.Right, 8);
+        //main_layout.addSpacer(8);
 		main_layout.add(new Line(Line.Horizontal), 0, Layout.Expand);
         main_layout.addSpacer(8);
         main_layout.add(button_layout, 0, Layout.Expand | Layout.Left | Layout.Right, 8);
@@ -142,7 +141,7 @@ class CDRLogImportForm extends Form
 		
 //************************************Experimental Start*************************************
 
-		checkbox1.click.connect(this, onCheckBoxClicked);
+//		checkbox1.click.connect(this, onCheckBoxClicked);
 
 //************************************Experimental End**************************************/
     }
@@ -195,16 +194,16 @@ class CDRLogImportForm extends Form
 	
 //***********************Experimental Start************************************************
 
-	function onCheckBoxClicked(sender, event_args)
-	{
-		//When a checkbox is clicked, out the label and check status to textbox
-		if (sender.getValue())
-			m_search_textbox.appendText(sender.getLabel() + "X");
-		else
-			m_search_textbox.appendText(sender.getLabel() + "O");
+//function onCheckBoxClicked(sender, event_args)
+//{
+//	//When a checkbox is clicked, out the label and check status to textbox
+//	if (sender.getValue())
+//		m_search_textbox.appendText(sender.getLabel() + "X");
+//	else
+//		m_search_textbox.appendText(sender.getLabel() + "O");
 
-		
-	}
+//	
+//}
 
 //***********************Experimental End*************************************************/
 

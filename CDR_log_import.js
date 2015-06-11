@@ -3,10 +3,10 @@
 
     Filename: CDR_log_import.js
     Project:  CDR Log Import Extension
-    (C) Copyright 2011, CarlBaccus.com LLC, All Rights Reserved.
+    (C) Copyright 2015, CarlBaccus.com LLC, All Rights Reserved.
 
     Summary:        Engine for CDR Log Import extenion
-	REVISION: Version 1.4.3
+	REVISION: Version 1.4.4
 	This revision allows a linking to another table that needs to be imported in the
 	project called DeviceName with destDeviceName,Owner structure. 
 	Then it matches Destination device owners name in ""Cleaned table that is output.
@@ -17,7 +17,7 @@
 
 	
     Developer(s):  Carl Baccus
-					Frank Mazzeo
+					
 	
 ---------------------------------------------------------------------------*/
 
@@ -33,7 +33,7 @@ class CDRLogImport
     {    
        
 		//alert("Hey "+ CllngD + " whatevs\n\n");
-	   // function: importFiles(files : Array) : Boolean
+	    // function: importFiles(files : Array) : Boolean
         //
         // summary: imports the access logs from the input files; returns 
         // true if the files import successfully and false otherwise

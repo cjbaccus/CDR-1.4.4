@@ -1,7 +1,7 @@
 <?xml version="1.0">
 <extension_info>
     <guid>{205436ed-5f7d-4f2b-a240-000000000000}</guid>
-    <name>CDR-1.4.3</name>
+    <name>CDR-1.4.4</name>
     <author>Carl Baccus</author>
     <bitmap>icon.png</bitmap>
     <startup>main.js</startup>
@@ -10,9 +10,10 @@
 	adds in the support for origDeviceName and a left join to separate table "DeviceNames" where 
 	Users are associated with devices.  The second "cleaned" table includes the users from CallingNumber
 	Added extra table for "Calling" number from the search criteria.
-	*****Experimental***** Adding check boxes for the form to do calling and/or called.
+	****** commented out the experimental sections ###############
+    *****Experimental***** Adding check boxes for the form to do calling and/or called.
 	</description>
     <major_version>1</major_version>
     <minor_version>4</minor_version>
-    <subminor_version>3</subminor_version>
+    <subminor_version>4</subminor_version>
 </extension_info>

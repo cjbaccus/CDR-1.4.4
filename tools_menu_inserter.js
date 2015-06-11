@@ -3,11 +3,11 @@
 
     Filename: tools_menu_inserter.js
     Project:  CDR CDR
-    (C) Copyright 2011, CarlBaccus.com LLC, All Rights Reserved.
+    (C) Copyright 2015, CarlBaccus.com LLC, All Rights Reserved.
 
     Summary:         Utility function for inserting CDRs into
                      the Tools menu in a consistent manner
-     REVISION: Version 1.4.3
+     REVISION: Version 1.4.4
 	This revision allows a linking to another table that needs to be imported in the
 	project called DeviceName with destDeviceName,Owner structure. 
 	Then it matches Destination device owners name in ""Cleaned table that is output.
