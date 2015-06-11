@@ -32,7 +32,7 @@ class CDRLogImport
     function importFiles(files,srch,CllngD)
     {    
        
-		alert("Hey "+ CllngD + " whatevs\n\n");
+		//alert("Hey "+ CllngD + " whatevs\n\n");
 	   // function: importFiles(files : Array) : Boolean
         //
         // summary: imports the access logs from the input files; returns 
